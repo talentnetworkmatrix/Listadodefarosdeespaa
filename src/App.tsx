@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useMemo } from 'react';
 import { Anchor } from 'lucide-react';
 import { lighthouses as initialLighthouses } from './data/lighthouses';
