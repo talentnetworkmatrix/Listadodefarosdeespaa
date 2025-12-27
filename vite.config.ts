@@ -6,6 +6,9 @@
   export default defineConfig({
     base: './',  // ← Añade esta línea
     plugins: [react()],
+    esbuild: {
+      jsxInject: `import React from 'react'`  // ← Añade esta línea
+    },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
