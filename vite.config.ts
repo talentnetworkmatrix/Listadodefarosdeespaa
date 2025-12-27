@@ -6,6 +6,9 @@
   export default defineConfig({
     base: './',  // ← Añade esta línea
     plugins: [react()],
+    build: {
+      outDir: 'dist',  // ← Añade esta sección
+    },
     esbuild: {
       jsxInject: `import React from 'react'`  // ← Añade esta línea
     },
