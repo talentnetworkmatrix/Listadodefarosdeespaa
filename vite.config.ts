@@ -9,12 +9,9 @@ export default defineConfig({
     target: 'esnext',
     outDir: 'dist',  // ← Cambiado de 'build' a 'dist'
   },
-  esbuild: {
-    jsxInject: `import React from 'react'`
-  },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
-    alias: {
+  extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+  alias: {
       'vaul@1.1.2': 'vaul',
       'sonner@2.0.3': 'sonner',
       'recharts@2.15.2': 'recharts',
